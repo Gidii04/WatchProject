@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watches</title>
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- BEGINING OF NAV -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <i class="fa-sharp fa-solid fa-bars nav-icon"></i>
+        <div class="orgName">
+          <img src="./images/logo.svg" alt="" class="logo" />
+          <h2>Horloge</h2>
+        </div>
+        <div class="cart-btn">
+          <i class="fas fa-cart-plus nav-icon"></i>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+    </nav>
+    <!-- END OF NAV -->
+    <!-- BEGINING OF COLLECTION -->
+    <section class="section">
+      <div class="shopArea">
+        <h2>Watch Collection</h2>
+        <button class="shopBtn">
+          <a href="#products" class="scroll-link">Shop Now</a>
+        </button>
+      </div>
+    </section>
+    <!-- END OF COLLECTION -->
+
+    <!-- BEGINING OF PRODUCTS -->
+    <section class="products">
+      <div class="section-title">
+        <h2 id="products">Our Products</h2>
+      </div>
+      <div class="product-center">
+        <!-- <article class="product">
+          <div class="img-container">
+            <img src="./images/product-1.jpg" alt="" class="product-img" />
+            <button class="bag-btn" data-id="1">
+              <i class="fas fa-shopping-cart addCart"></i>add to cart
+            </button>
+          </div>
+          <h3>Rider1991</h3>
+          <h4><i class="fa-solid fa-naira-sign"></i>7000</h4>
+        </article> -->
+      </div>
+    </section>
+    <!-- END OF PRODUCT -->
+    <!-- CART OVERLAY -->
+    <section class="cart-overlay">
+      <div class="cart">
+        <i class="fas fa-window-close close-cart"></i>
+        <h2>Your Cart</h2>
+        <div class="cart-content">
+          <!-- <div class="cart-item">
+            <img src="./images/product-1.jpg" alt="" srcset="" />
+            <div>
+              <h3>couch</h3>
+              <h4><i class="fa-solid fa-naira-sign"></i>3000</h4>
+              <p class="remove-item">remove</p>
+            </div>
+            <div>
+              <i class="fas fa-chevron-up"></i>
+              <p class="item-amount">1</p>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </div> -->
+          <div>
+            <div class="cart-footer">
+              <h3>
+                your total : <i class="fa-solid fa-naira-sign"></i
+                ><span class="cart-total">0</span>
+              </h3>
+              <button class="clear-cart clearBtn">clear cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="app.js"></script>
+</html>
