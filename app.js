@@ -22,16 +22,19 @@ class Products {
     try {
       let response = await fetch('product.json')
       let data = await response.json()
-
-      // return data
+      console.log(data)
 
       // the you destructure by using map to get the items in the data json
 
       let products = data.items
+      console.log(products)
       products = products.map((items) => {
         const { title, price } = items.fields
+        // console.log(title)
         const { id } = items.sys
         const image = items.fields.image.fields.file.url
+        console.log(products)
+
         return { title, price, id, image }
         // console.log(title, price, id, image)
       })
