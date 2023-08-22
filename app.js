@@ -33,8 +33,6 @@ class Products {
         // console.log(title)
         const { id } = items.sys
         const image = items.fields.image.fields.file.url
-        console.log(products)
-
         return { title, price, id, image }
         // console.log(title, price, id, image)
       })
